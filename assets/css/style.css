@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,500&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 8px;
+    border: none;
+
+}
+
+header {
+    z-index: 100;
+    position: relative;
+}
+
+body {
+    font-family: Garamond, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+    background-color: rgba(243, 229, 171);
+    margin: 12px;
+}
+
+
+/* headings and logo */
+#logo {
+    font-family: Helvetica;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+h1,
+h2 {
+    font-family: Helvetica, Arial;
+    letter-spacing: 4px;
+    color: #252525;
+    text-transform: uppercase;
+
+}
+
+#welcome {
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: #252525;
+    text-align: center;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 280%;
+}
+
+
+/* navigation links */
+
+#logo,
+#menu {
+    line-height: 25px;
+
+}
+
+#menu {
+
+    font-size: 110%;
+    letter-spacing: 4px;
+
+
+}
+
+#menu li {
+    float: right;
+    list-style-type: none;
+    margin-right: 30px;
+    display: grid;
+    
+
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+
+/* Animates zoom effect on loading the page */
+
+animation {
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#hero-image {
+    height: 250px;
+    width: 100%;
+    padding-top: 1px;
+    background: url("../images/catherin-of-aragon-hero2.jpg") no-repeat center center;
+
+    /* Animates zoom effect on loading the page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    padding-top: 200px;
+
+}
+
+/* Creates the level of zoom for hero image */
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/*text first page*/
+
+#timeline-heading {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    text-align: left;
+    font-family: Garamond;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.timeline-list {
+    list-style-type: none;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+    width: 22em;
+    letter-spacing: 1px;
+}
+
+/*Tudor-rose */
+
+
+.flex-container-rose {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.lifestory {
+
+    padding: 50px 20px 0 20px;
+}
+
+.lifestory-heading {
+    padding-top: 20px;
+    font-size: larger;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    bottom: 0px;
+    height: 150px;
+    justify-content: center;
+
+
+
+}
+
+.social-networks {
+    text-align: center;
+width: 100vw;
+margin: auto;
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+/* Gallery Paintings */
+
+
+
+#girl-container {
+   
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    padding-top: 10px;
+    padding-left: 250px;
+    padding-bottom: 100px;
+}
+
+
+#young-container {
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    width: 60%;
+    height: 60%;
+    padding-left: 250px;
+    padding-bottom: 100px;
+}
+#magdalena-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 60%;
+    padding-left: 250px;
+    padding-bottom: 100px;
+}
+
+.desc {
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+}
+
+
+
+/* sign-up text */
+
+.sign-up-text {
+
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#enjoy {
+    padding-left: 20px;
+    padding-bottom: 5px;
+
+}
+
+/* Form */
+
+.form-section {
+    clear: left;
+    background: url("../images/castle-chillon-by-the-lake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+
+#sign-up {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.signup-form {
+    margin: 150px 10% 0 0;
+    color: #fff;
+    background-color: rgba(60, 60, 60, 0.6);
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+}
+
+
+.signup-form>h2 {
+    color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
+
+.text-input:hover {
+    border-color: #db8282;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: rgba(243, 229, 171);
+    ;
+    color: #131212;
+    display: block;
+}
+
+.join-button:hover {
+    background-color: #b60505;
+    color: #0c0b0b;
+}
+
+/* For medium screens sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+
+
+    #hero-image {
+
+        max-width: 2%;
+        max-height: 40%;
+        animation: none;
+        padding-right: 230%;
+    }
+
+    #girl-container {
+
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        width: 70%;
+        height: 70%;
+        padding: 0px 0 0px 40px;
+
+
+    }
+
+
+    #young-container {
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        width: 70%;
+        height: 70%;
+        padding-left: 40px;
+
+
+    }
+
+    #magdalena-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
+
+    /* For small screens sizes from 800px wide and down */
+    @media screen and (max-width: 800px) {
+        #logo,
+        #menu {
+            line-height: 20px;
+        
+        }
+        
+        #menu {
+        
+            font-size: 40%;
+            letter-spacing: 1px;
+        
+        }
+        
+        #menu li {
+            float: right;
+            list-style-type: none;
+            display: grid;
+    
+        
+        }
+
+        #hero-image {
+
+            max-width: 10%;
+            max-height: 40%;
+            animation: none;
+            padding-right: 230%;
+        }
+
+      
+        #girl-container {
+
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            width: 70%;
+            height: 70%;
+            padding-left: 40px;
+
+        }
+
+
+        #young-container {
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            width: 70%;
+            height: 70%;
+            padding-left: 40px;
+
+
+        }
+
+        #magdalena-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 70%;
+            height: 70%;
+            padding: 0 0 10px 40px;
+
+
+        }
+
+    }
